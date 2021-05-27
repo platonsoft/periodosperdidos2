@@ -1,4 +1,4 @@
-package com.desafio;
+package com.desafios.periodosperdidos2;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
@@ -12,8 +12,7 @@ import java.util.LinkedHashSet;
 import java.util.Set;
 import java.util.stream.Collectors;
 
-public class Main {
-
+public class App {
     public static void main(String[] args) {
         Valores valores = new Valores();
         Gson gson = new GsonBuilder().setDateFormat("yyyy-MM-dd").create();
@@ -33,6 +32,4 @@ public class Main {
                 "clase com.previred.desafio.tres.uf.DatosUf.\n");
         System.out.println(gson.toJson(ufs));
     }
-
-
 }
