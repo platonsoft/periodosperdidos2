@@ -1,6 +1,0 @@
-projectKey=com.desafios:periodosperdidos2
-serverUrl=http://200.111.183.149:8096
-serverVersion=8.9.1.44547
-dashboardUrl=http://200.111.183.149:8096/dashboard?id=com.desafios%3Aperiodosperdidos2
-ceTaskId=AXoQj5umTscMJ-902RrZ
-ceTaskUrl=http://200.111.183.149:8096/api/ce/task?id=AXoQj5umTscMJ-902RrZ
