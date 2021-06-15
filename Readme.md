@@ -66,12 +66,21 @@ Crear un archivo JSON que contenga el siguiente formato:
 }
 ```
 Implementacion:
--   Se utilizo Java 8, con las librerias de Gson de google y la libreria proporcionada para el ejercicio
+-   Se utilizo Java 8, con las librerias de Gson de google, Log4j y la libreria proporcionada para el ejercicio
 
 ## Instalacion:
 
-Para la instalacion se debe hacer lo siguiente (Si desea cambiar el puerto lo puede hacer en el archivo application.properties):
+Para la instalacion se debe hacer lo siguiente:
 
+-   Si desea cambiar el puerto lo puede hacer en el archivo application.properties
+
+-   Para la instalacion de las librerias puede ejecutar los siguientes comandos en el directorio principal de la aplicacion:
+```
+    mvn install:install-file -Dfile=lib/Generador_Datos_Desafio_Tres-1.0.0.jar -DgroupId=com.previred.desafio.tres -DartifactId=Generador_Datos_Desafio_Tres -Dversion=1.0.0 -Dpackaging=com.previred.desafio.tres
+    mvn install:install-file -Dfile=lib/gson-2.8.7.jar -DgroupId=com.google -DartifactId=gson -Dversion=2.8.7 -Dpackaging=com.google
+```
+-   Debe verificar si en su repositorio (carpeta .m2 de su usuario) local se creo el directorio de cada paquete y si se incluyo el archivo .jar  
+-   Finalmente para generar los artefactos:
 ```
     mvn clean install
 ```
